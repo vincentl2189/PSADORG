@@ -9,5 +9,5 @@ Import-Module ActiveDirectory
     
 #Functions
 #Computers are moved based on Matching Description and Location
- Get-ADComputer -Filter {(Description -like "Information Technology Laptop") -and (Location -like "New York")} -ResultSetSize $null| Move-ADObject -TargetPath $OU1
- Get-ADComputer -Filter {(Description -like "Information Technology Laptop") -and (Location -like "Tokyo")} -ResultSetSize $null| Move-ADObject -TargetPath $OU2
+ Get-ADComputer -Filter {(Description -like "Department Chassis") -and (Location -like "New York")} -ResultSetSize $null| Move-ADObject -TargetPath $OU1
+ Get-ADComputer -Filter {(Description -like "Department Chassis") -and (Location -like "Tokyo")} -ResultSetSize $null| Move-ADObject -TargetPath $OU2
