@@ -2,7 +2,7 @@
 Import-Module ActiveDirectory
 
 #CSV Import
-Import-Csv -Path \\ctscdc01\org\infoconversion.csv | % {  
+Import-Csv -Path \\Path | % {  
 
 #Variables
 $Computer = $_.Computer  
