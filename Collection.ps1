@@ -6,16 +6,13 @@
 
 
 #Variables
-
 $Username =  $env:USERNAME
 $Computername = $env:COMPUTERNAME
 $chassis = Get-WmiObject win32_systemenclosure -computer $Computername | foreach { $_.Chassistypes }
 
 
 #Table constructions keeps the values in a clean readable state.
-
 #Table Structure
-
 $tabName = “Membership”
 $table = New-Object system.Data.DataTable “$tabName”
 $col1 = New-Object system.Data.DataColumn Computer,([string])
@@ -32,5 +29,4 @@ $table.Rows.Add($row)
 
 
 #Table Build and export
-
 $tabCsv = $table | export-csv \\Path -Append -noType
