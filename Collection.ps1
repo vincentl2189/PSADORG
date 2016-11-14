@@ -1,8 +1,8 @@
-#Script to query the computer for logged in user, upon login. I will use using Group Policy to run the script on targeted users.
-#You obviously don't want Administartors and take ownership of other users computers, and servers.
+#Script to query the computer for logged in user, upon login. I will be using Group Policy to run the script on targeted users.
+#You obviously don't want Administartors to take ownership of other users computers, and servers.
 
 #Here is where we get the properties that are going to be included in the CSV. There are better ways to get this information but,
-#keep in mind, these must all be run from the user context, and can not included evelated commands, AD access, or modules.
+#keep in mind, these must all be run from the user context, and can not include evelated commands, AD access, or modules.
 
 
 #Variables
