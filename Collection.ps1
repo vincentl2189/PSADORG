@@ -8,7 +8,7 @@
 #Variables
 $Username =  $env:USERNAME
 $Computername = $env:COMPUTERNAME
-$chassis = Get-WmiObject win32_systemenclosure -computer $Computername | foreach { $_.Chassistypes }
+$Chassis = Get-WmiObject win32_systemenclosure -computer $Computername | foreach { $_.Chassistypes }
 
 
 #Table constructions keeps the values in a clean readable state.
@@ -24,7 +24,7 @@ $table.columns.add($col3)
 $row = $table.NewRow()
 $row.Computer = “$Computername” 
 $row.Username = “$Username”
-$row.Chassis = “$chassis”
+$row.Chassis = “$Chassis”
 $table.Rows.Add($row)
 
 
