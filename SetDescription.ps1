@@ -1,3 +1,22 @@
+<# SetDescription.ps1
+.SYNOPSIS
+	Set computer description to matching user information from CSV export 
+.DESCRIPTION
+	This script moves set the inforatmion in AD to match the table in our CSV export
+	Make sure to edit and change the PARAM section to match your environment
+.EXAMPLE
+	.\SetDescription.ps1
+	
+	
+.NOTES
+	Script:				SetDescription.ps1
+	Author:				Berry George
+	
+	Changelog
+		1.0				Initial Version
+.LINK
+	Source:			https://github.com/vincentl2189/PSADORG	
+	#>
 #Set computer description to matching user information from CSV export
 Import-Module ActiveDirectory
 
