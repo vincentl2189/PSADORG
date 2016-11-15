@@ -1,5 +1,28 @@
-#Chassis Type Conversion
-#Simple hash table to convert chassis type in our CSV to a more readable format.
+<# ChassisConversion.ps1
+
+.SYNOPSIS
+	Hash table to convert chassis type
+.DESCRIPTION
+	This script is a simple hash table to convert chassis type in our CSV to a more readable format.
+	
+	Make sure to edit and change the PARAM section to match your environment
+.PARAMETER CSV
+	Tell the script where the CSV file is
+.OUTPUTS
+	CSV:	Exports the converted hash table into a CSV
+.EXAMPLE
+	.\ChassisConversion.ps1
+	
+	
+.NOTES
+	Script:				ChassisConversion.ps1
+	Author:				Berry George
+	
+	Changelog
+		1.0				Initial Version
+.LINK
+	Source:			https://github.com/vincentl2189/PSADORG	
+	#>
 
 #Hash table
 $ChassisCoversion = @{
