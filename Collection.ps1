@@ -8,7 +8,7 @@
 #Variables
 $Username =  $env:USERNAME
 $Computername = $env:COMPUTERNAME
-$Chassis = Get-WmiObject win32_systemenclosure -computer $Computername | foreach { $_.Chassistypes }
+$Chassis = Get-WmiObject win32_systemenclosure -computer ctsc-8xs6362 | Select -First 1 | foreach { $_.Chassistypes }
 
 
 #Table constructions keeps the values in a clean readable state.
