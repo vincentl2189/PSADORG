@@ -10,5 +10,5 @@ The scripts need to be scheduled to run in a specific order.
 
 3. SetDescription.ps1 will set all the properties we have been collecting on the computer object
 
-4. MoveComputers.ps1 will complete the proccess and move the computeres to thier matching OU
+4. MoveComputers.ps1 will complete the proccess and move the computers to thier matching OU
 
